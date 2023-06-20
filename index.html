@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>helloWorld</title>
+    
+    <style type="text/css" media="all">
+    body{background: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+    }
+   #container {
+        
+        background: #333;
+        width: auto;
+        height: auto;
+        overflow: scroll;
+        background-repeat-y: no-repeat;
+        background-repeat-x: no-repeat;
+        background-size:cover;
+perspective: 1000px;
+      perspective-origin: top;
+      padding: 0px 0px 0px 0px;
+       justify-content: center;
+     !important }
+     
+     #img1 {
+           height: auto;
+           width: auto;
+     }
+     
+     #butt1 {
+       
+       width: 900px;
+       margin: 60px;
+       
+     }
+     #dora1,#dora2,#dora3,#dora4,#dora5,#dora6,#dora7,#dora8,#dora9 {
+       
+       width: 900px;
+       margin: 60px;
+       
+     }
+  </style>
+  </head>
+  <body id="body">
+    <h1>Hey! whassup?</h1>
+    <wbr />
+    
+
+    <br />
+    <div id="container">
+   <!-- <img src="ufo.jpg" alt="" />-->
+    <br />
+    <video id="img1" src="beautiful.mp4" controls></video>
+    </div>
+
+    <br />
+    
+    <input type="text" id="txt2"  oninput="imageme()" value="linear-gradient(to right, black , blue),url('url('w.jpg)"
+    placeholder="Background Entries"/>
+    <br />
+    <input type="text"  id="sophie" value="mcq.mp4" oninput="imageme()" placeholder="EnterVideoNameWAddrss"/>
+  <br />
+  
+<!-- <input type="text" name="txt1" id="txt1"  oninput="hellWorld()" />-->
+ <script type="text/javascript" charset="utf-8">
+       function hellWorld(){
+             var goddamned1 = document.getElementById('txt2').value;
+             document.getElementById('container').style.background=goddamned1;
+       }
+ </script>
+ 
+ <select name="select1" id="select1" oninput="control()">
+   
+  <option value="inline">enabled</option>
+   <option value="none" >disabled</option>
+ 
+ </select>
+<select name="select1" id="select2" oninput="jjfadd()">
+     <option value="top">top</option>
+     <option value="right">right</option>
+     <option value="bottom">bottom</option>
+     <option value="left">left</option>
+     
+</select>
+<select name="select1" id="select3" oninput="blendi()">
+     <option value="normal">normal</option>
+     <option value="multiply">multiply</option>
+     <option value="screen">screen</option>
+     <option value="overlay">overlay</option>
+     <option value="darken">darken</option>
+     <option value="lighten">lighten</option>
+    <option value="color-dodge">color-dodge</option>
+    <option value="saturation">saturation</option>
+    <option value="color">color</option>
+    <option value="limonusity">limonusity</option>
+    <option value="source-atop">aource-atop</option>
+    <option value="soft-light">soft-light</option>
+    <option value="plus-lighter">plus-lighter</option>
+    <option value="plus-darker">plus-darker</option>
+    <option value="hue">hue</option>
+    <option value="hard-light">hard-light</option>
+    <option value="color-burn">color-burn</option>
+    
+    
+    
+</select>
+<script type="text/javascript" charset="utf-8">
+      
+      
+      function blendi(){
+            alert('work');
+            var kafkao = document.getElementById('select3').value;
+            document.getElementById('container').style.backgroundBlendMode=kafkao;
+      }
+</script>
+<br />
+<br />
+<br />
+<lable>Enter vid.width</lable>
+<input type="range" name="dora3" id="dora8" value="0" min="0" max="2000" oninput="callme1()" placeholder="enter width"/>
+<br />
+<lable>Enter vid.height</lable>
+<input type="range" name="dora3" id="dora9" value="0" min="0" max="2000" oninput="callme1()" placeholder="enter height"/>
+<br />
+
+<label>Opacity</label>
+ <input type="range" name="butt1" id="butt1" value="100" min="0" max="100"
+ oninput="vol1()" width="900px"/>
+ <br />
+ <label>translate Background</label>
+ <input type="range" name="dora1" id="dora1" value="0" min="0" max="1400" oninput="callme()" />
+ <br />
+ <label>Enter r.Y</label>
+ <input type="range" name="dora2" id="dora2" value="0" min="0" max="360" oninput="callme1()" placeholder="enter x"/>
+ <br />
+ <label>Enter r.X</label>
+ <input type="range" name="dora3" id="dora3" value="0" min="0" max="360" oninput="callme1()" placeholder="enter y"/>
+ <br />
+ <label>Enter r.Z</label>
+ <input type="range" name="dora3" id="dora4" value="0" min="0" max="360" oninput="callme1()" placeholder="enter z"/>
+<br />
+ <label>translate Y</label>
+<input type="range" name="dora3" id="dora5" value="0" min="-2000" max="2000" oninput="callme1()" placeholder="enter translate y"/>
+<br />
+ <label>translate X</label>
+<input type="range" name="dora3" id="dora6" value="0" min="-2000" max="2000" oninput="callme1()" placeholder="enter translate x"/>
+<br />
+ <label>translate Z</label>
+<input type="range" name="dora3" id="dora7" value="0" min="-2000" max="2000" oninput="callme1()" placeholder="enter translate z"/>
+<br />
+
+
+ 
+ <script type="text/javascript" charset="utf-8">
+    
+
+    
+   function callme() {
+     
+     
+     var walue=document.getElementById('dora1').value;
+     
+     document.getElementById('container').style.transform="translateY(-"+walue+"px)";
+    
+    
+    
+    Object.assign(obj.style,new1);}
+   function callme1() {
+     
+     var value2 =document.getElementById('dora2').value;
+     var value3 =document.getElementById('dora3').value;
+     var value4 =document.getElementById('dora4').value;
+     var value5 =document.getElementById('dora5').value;
+     var value6 =document.getElementById('dora6').value;
+     var value7 =document.getElementById('dora7').value;
+     var value8 =document.getElementById('dora8').value;
+     var value9 =document.getElementById('dora9').value;
+     
+     var new11 ={"transform":"rotateY("+value2+"deg)rotateX("+value3+"deg)rotateZ("+value4+"deg)translateY("+value5+"px)translateX("+value6+"px)translateZ("+value7+"px)","width":value8+"px","height":value9+"px"};
+    
+    var obj = document.getElementById('img1');
+    
+    Object.assign(obj.style,new11);
+       
+     }
+   function imageme(){ 
+     var know1 = document.getElementById('txt2').value;
+     var know2 = document.getElementById('sophie').value;
+     
+  document.getElementById('container').style.background=know1;
+     
+     document.getElementById('img1').src=know2;
+   
+   }
+   function vol1(){
+     var opa1 =document.getElementById('butt1').value;
+      document.getElementById('img1').style.filter="opacity("+opa1+"%)";
+   }
+   function control(){
+    
+     var string1 = document.getElementById('select1').value;
+     document.getElementById('txt2').style.display=string1;
+     document.getElementById('sophie').style.display=string1;
+   }
+   function jjfadd(){
+        var warmth = document.getElementById('select2').value;
+        document.getElementById('container').style.perspectiveOrigin=warmth;
+   }   
+    </script>
+  
+  
+  
+  
+  </body>
+</html>
